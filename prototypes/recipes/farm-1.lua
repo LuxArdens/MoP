@@ -1,0 +1,19 @@
+--(( Coal Processing 1))--
+--RECIPE {
+--    type = "recipe",
+--    name = "bonemeal",
+--    category = "ulric",
+--    enabled = false,
+--    energy_required = 45,
+--    ingredients = {
+--        {type = "item", name = "ralesia", amount = 10}
+--    },
+--    results = {
+--        {type = "item", name = "bonemeal", amount = 5}
+--    },
+--    main_product = "bonemeal",
+--    icon = "__pycoalprocessing__/graphics/icons/bonemeal.png",
+--    icon_size = 32,
+--    subgroup = "py-items",
+--    order = "g"
+--}
