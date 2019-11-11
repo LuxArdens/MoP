@@ -1,0 +1,17 @@
+Globaal:
+
+X	1. Eerste farms, recepten, prototypes maken
+X	2. Leren om recipe replace ingredients uit te voeren
+	3. commando testen om object te tellen, en CPU tijd uitrekenen. Energy source opzetten voor gebouwen die geen labor horen te verbruiken 
+	4. Leren variabelen te definiëren voor een gebouw, UI bouwen voor gebouw waarin balkje getoond wordt met die variabelen
+	5. Labor, food, workers, en andere recepten, werkende krijgen
+	6. globaal script schrijven om die variabele te linken aan een simpel rekensommetje met de getelde hoeveelheid van labor
+	7. Meer farms. Meer labor types. Meer commodities. Meer recepten.
+	8. Getallen verder uitwerken. Balans opstellen. Belts en treinen aanpassen.
+	9. Uitbreiding settings en kleine dingetjes. Aanvullen van graphics, tekst.
+		9b. beta-release (0.9)
+	10. Volledige vanilla-integratie afmaken: uitgebreide playtest, player feedback verwerken en simpele bugfixes
+	11. Indien nodig, extra complexiteit of functionaliteit toevoegen. Grafische shit polijsten
+		11b. 1.0 release
+	
+	13. Integratie met Angelbobs/seablock/Pyanodon?

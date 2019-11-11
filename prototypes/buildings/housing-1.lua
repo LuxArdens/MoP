@@ -27,37 +27,37 @@ local pipes = {
 
 RECIPE {
     type = "recipe",
-    name = "farm-1",
+    name = "housing-1",
     energy_required = 1,
     enabled = true,
     ingredients = {
         {"raw-wood", 10},
     },
     results = {
-        {"farm-1", 1}
+        {"housing-1", 1}
     }
 }
 
 ITEM {
     type = "item",
-    name = "farm-1",
+    name = "housing-1",
     icon = "__MoP__/graphics/icons/botanical-nursery.png",
     icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "mop-items",
     order = "f",
-    place_result = "farm-1",
+    place_result = "housing-1",
     stack_size = 10
 }
 
 ENTITY {
     type = "assembling-machine",
-    name = "farm-1",
+    name = "housing-1",
     icon = "__MoP__/graphics/icons/botanical-nursery.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "farm-1"},
-    fast_replaceable_group = "farms",
+    minable = {mining_time = 1, result = "housing-1"},
+    fast_replaceable_group = "housing",
     max_health = 700,
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
@@ -67,16 +67,15 @@ ENTITY {
         module_slots = 0
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    crafting_categories = {"farms"},
+    crafting_categories = {"housing"},
     crafting_speed = 1,
     energy_source = {
       type = "burner",
       effectivity = 1,
-	  fuel_category = "labor",
       fuel_inventory_size = 1,
       emissions = 0.00,
     },
-    energy_usage = "0.1kW",
+    energy_usage = "0.000001kW",
     ingredient_count = 4,
     animation = {
         filename = "__MoP__/graphics/entity/botanical-nursery/botanical-nursery.png",

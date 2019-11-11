@@ -1,8 +1,0 @@
-[item-description]
-labor-1=Representing twelve man-hours worth of hard, unskilled labor.
-
-[item-name]
-labor-1=Labor
-
-[item-group-name]
-labor=Labor
