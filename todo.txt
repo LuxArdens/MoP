@@ -2,7 +2,7 @@ Globaal:
 
 X	1. Eerste farms, recepten, prototypes maken
 X	2. Leren om recipe replace ingredients uit te voeren
-	3. commando testen om object te tellen, en CPU tijd uitrekenen. Energy source opzetten voor gebouwen die geen labor horen te verbruiken 
+X	3. commando testen om object te tellen, en CPU tijd uitrekenen. Energy source opzetten voor gebouwen die geen labor horen te verbruiken 
 	4. Leren variabelen te definiëren voor een gebouw, UI bouwen voor gebouw waarin balkje getoond wordt met die variabelen
 	5. Labor, food, workers, en andere recepten, werkende krijgen
 	6. globaal script schrijven om die variabele te linken aan een simpel rekensommetje met de getelde hoeveelheid van labor
@@ -15,3 +15,29 @@ X	2. Leren om recipe replace ingredients uit te voeren
 		11b. 1.0 release
 	
 	13. Integratie met Angelbobs/seablock/Pyanodon?
+	
+	
+	
+	
+	
+3. tellen van items in het spel is niet te doen. Bevriest spel voor een minuut of langer. Nieuw plan: huizen produceren een vaste hoeveelheid aan werkers (bv 10 voor een hut), en stopt dan. Dat dwingt automatisch circulatie af. Huizen krijgen een balk/meter met hoe goed ze gevoed worden en als die lager is dan de populatie die het huis 'heeft', dan draait er een script:
+
+(pseudo-code)
+
+if hunger > 0
+local_count = 1
+while local_count>0:
+	for area(x,y):
+		find.entity.category(labor)
+		delete.item
+	end
+	local_count = local_count - 1 
+end
+
+Script verwijdert het eerste item van de 'labor' klasse die ie tegenkomt en stopt dan. Als er nog steeds honger is, dan draait ie na een tijdje vrolijk opnieuw. De inbreng van labor geschiedt alleen bij het bouwen en voeden van huizen, dus het vernietigen van kisten met labor erin leidt tot onzichtbare schade die niet te fiksen is en spook-populatie die wel voeding vereist maar niet bestaat.
+
+
+
+
+
+
