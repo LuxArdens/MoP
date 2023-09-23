@@ -1,0 +1,173 @@
+	Centrale ontwerpfilosofie van deze modificatie:
+Een centraal spelmechanisme in vanilla Factorio zijn de bijters die continu een bepaalde hoeveelheid productie/grondstoffen/energie in wapens vereisen van de speler, afhankelijk van de hoeveelheid uitstoot/productie die de fabriek heeft. Mits de speler normaal speelt en niet tot buiten de eigen uitstootwolk uitbreidt of de veel te sterke vlammenwerpers gebruikt, werkt dit mechanisme min of meer prima van het begin van het spel tot ongeveer halverwege. Op een gegeven moment is de productie van elektriciteit, munitie, vervangende gebouwen en bots, en evt. olie zo gemakkelijk dat geen horde aan Behemoths ook maar enige uitdaging levert of een merkbare consumptie oplevert, en alle productie kan dan zonder remmen (of uitdaging!) ingezet worden voor het uitbreiden van de fabriek. 
+
+MoP heeft als doel om een vergelijkbare "put" te maken waar een fractie van de grondstoffen continu in eindigd. De balans zal liggen zoals die in de realiteit ook ligt: waar meer middelen zijn, willen mensen ook meer, en je kunt het ze niet altijd geven zonder risico bankroet te eindigen. Ameniteiten voor POP moeten duur genoeg zijn dat bij slecht beheer de hele fabriek in feite opgeëist wordt of een doodsspiraal terecht kan komen. Dat is namelijk een compleet ander soort uitdaging die zelfs de honderden recepten van Pyanodon niet heeft. Boven alles mag het niet zo worden als elektriciteitsproductie waarbij een gedeeelte van de fabriek simpelweg zonder nadenken gekopieerd kan worden om 2 keer zoveel te produceren. Meer appartementen bouwen is vaak geen optie en hersenloos de fabriek verdubbelen zorgt er nu voor dat er een tekort van 50% aan arbeid ontstaat.
+
+Globaal:
+
+X	1. Eerste farms, recepten, prototypes maken
+X	2. Leren om recipe replace ingredients uit te voeren
+--3. commando testen om object te tellen, en CPU tijd uitrekenen. Energy source opzetten voor gebouwen die geen labor horen te verbruiken -- GAAT NIET DOOR
+X	3. stasis pods ore maken om pops te verkrijgen
+	3b. deep copy van vanilla recepten maken
+	3c. nieuwe assemblers met labor als fuel maken
+	4. Huis met bepaalde fuel requirements maken, UI bouwen voor huis waarin balkje getoond wordt dat telkens aftelt
+	5. Labor, ameniteiten, huizen, nieuwe recepten, aangepaste recepten allemaal gedeeltelijk speelbaar krijgen
+	6. Meer farms. Meer labor types. Meer commodities. Meer recepten.
+	7. Getallen verder uitwerken. Balans opstellen. Belts en treinen aanpassen.
+	8. Uitbreiding settings en kleine dingetjes. Aanvullen van graphics, tekst.
+		9b. beta-release (0.9)
+	9. Volledige vanilla-integratie afmaken: uitgebreide playtest, player feedback verwerken en simpele bugfixes
+	10. Indien nodig, extra complexiteit of functionaliteit toevoegen. Grafische shit polijsten
+		11b. 1.0 release
+	
+	11. Integratie met Angelbobs/seablock/Pyanodon?
+	
+	
+	
+	
+	
+3. tellen van items in het spel is niet te doen. Vereist script en bevriest spel voor een minuut of langer. Nieuw plan: het aantal pops is beperkt doordat ze alleen verkrijgbaar zijn uit een zeldzame ore. Huizen/appartementen representeren bevolking, beginnend bij lokale boerderijtjes en eindigend in gigantische verticale steden. Huizen moeten continu gevoed worden met allerlei producten om te functioneren. Spent Labor komt de huizen binnen en verandert in LABOR. Labor is daarna vrij toe te passen in elk proces. De eerste portie aan labor kan alleen geproduceerd worden met behulp van de zeldzame ore.
+
+
+	Balansfilosofie:
+1. Er moet altijd een druk/aanmoediging zijn om arbeid efficiënter in te zetten.
+2. De fabriek moet instorten als er teveel productie naar ameniteiten gaat.
+3. De kosten van de nieuwste en beste ameniteiten moet ten alle tijden voelbaar en aanzienlijk zijn.
+4. Er moet altijd een 'veilige' status quo zijn op basis van het allerlaagste arbeids/ameniteitenniveau.
+5. De kosten om POPs meer te geven en hoger op te leiden moeten exponentieel groeien.
+6. De productiviteit door automatisering moet met eenzelfde exponent groeien.
+7. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+POP levels:
+
+
+Huizen:
+
+
+	### Type ameniteiten, ameniteiten, eindproducten, goederen, productie ###
+
+VOEDSEL
+Simpel voedsel/calorieen
+	elk soort voedsel
+		jagen, 
+		verzamelen
+		veehouderij
+		telen met toenemende complexiteit
+		hydroponisch, 
+		aeroponisch, 
+		moleculair
+Aanvullend voedsel
+	groente/fruit
+		idem minus het jagen en veehouderij
+	vlees pakket
+		jagen
+		veehouderij
+		kloonvlees
+Luxe voedsel
+	lekkernijen
+		bakkerij
+		snack/snoepproductie
+		industriële bakkerij
+		moleculair perfect geprinte gebakjes
+	alcohol
+		handmatige wijnpers
+		grootschalige wijnproductie
+		graandistillatie
+		
+
+BOUWMATERIAAL
+Basis Bouwmateriaal
+	hout
+		houtkappen met stenen 
+		houtkappen met ijzeren bijlen
+		houtkappen met stalen zagen
+		bosbouw met gemotoriseerde zagen
+		bosbouw met mechanisatie
+		geconcentreerde bosbouw ondergronds o.i.d. (hout is op dit punt niet echt meer heel nodig)
+		moleculaire houtreplicatie (voor het gemak in het eindspel)
+Simpel Bouwmateriaal
+	steen/keramiek
+		handgelegde natuurstenen
+		gespleten natuurstenen met cement
+		gebakken stenen
+		beton
+		gewapend beton
+		vezelversterkte keramiekmatrix
+	bevestigingsmateriaal
+		houten pluggen
+		ijzeren spijkers
+		stalen schroeven
+		(lijm uit dieren) (moderne verbetering in productie voor oude recepten en houten dingen)
+		prefab pasvormen
+	dakbedekking
+		0. hout/bladeren - bij nood
+		natuursteen
+		dakpannen
+		bitumen
+		beton
+
+DIVERSE
+Medicijnen
+	dokterstijd
+		traditionele genezingen (ongeletterd)
+		dokters (geschoold)
+		modern ziekenhuis
+		auto-dokters
+		medische nanobots
+Huishouden
+	Gerei/apparaten
+		handarbeid
+		1 oven, tafel, paar stoelen, 1 bed
+		uitgebreide meubilair, banken, meer bedden, etc.
+		elektrische apparaten
+		moderne elektronica
+		futuristische elektronica
+	Temperatuurcontrole
+		dekens en waaiers
+		kachels
+		airco en elektrische kachels
+		complete klimaatbeheersing
+Kleding
+	Basiskleding
+		Handwerk, vrouwen des huis
+		Handwerk, beter werktuig om te spinnen e.d.
+		vroege machinale textielproductie 
+		industriële textielproductie en naaimachines
+		Volautomatische productie
+	Beter kleding - idem
+	Luxe kleding
+	ultraluxe kleding
+
+EXTERN VERMAAK
+Sociale gelegenheden
+	
+Diverse vermaak
+	Theater
+	Dierengevechten
+	Bioscoop
+	Holografisch supersonische spellenhal
+Uit eten
+	Restaurant
+		Neemt elk type voedsel in en blijft altijd een inefficient luxeding dat gewoon arbeid opslokt
+		
+		
+		

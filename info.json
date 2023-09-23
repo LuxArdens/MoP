@@ -1,11 +1,11 @@
 {
   "name": "MoP",
   "version": "0.0.1",
-  "factorio_version": "0.16",
+  "factorio_version": "1.1.74",
   "title": "Means of Production",
   "author": "LuxArdens",
   "contact": "",
   "homepage": "",
   "description": "Overhaul mod that adds dynamic population and labor as a requirement to all production. Emulates real life technological progression and provides a greater logistical challenge as well as new 'balance of production' concerns.",
-  "dependencies": ["base >= 0.16.0", "boblibrary >= 0.16.0"]
+  "dependencies": ["base >= 0.16.0", "boblibrary >= 1.1.6"]
 }

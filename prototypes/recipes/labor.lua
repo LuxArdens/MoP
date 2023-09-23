@@ -4,30 +4,30 @@ data:extend(
 
 RECIPE {
     type = "recipe",
-    name = "labor-1-increase",
+    name = "labor-1-initial",
     category = "housing",
     enabled = true,
-    energy_required = 10,
+    energy_required = 0.1,
     ingredients = {
-        {type = "item", name = "food-1", amount = 10}
+        {type = "item", name = "human-1", amount = 1}
     },
     results = {
         {type = "item", name = "labor-1", amount = 1}
     },
-    icon = "__MoP__/graphics/icons/labor-1.png",
+    icon = "__MoP__/graphics/icons/open-pod.png",
     icon_size = 32,
     subgroup = "mop-items",
     order = "a"
 },
+
 RECIPE {
     type = "recipe",
     name = "labor-1-rest",
     category = "housing",
     enabled = true,
-    energy_required = 1,
+    energy_required = 14.4,
     ingredients = {
-        {type = "item", name = "usedlabor-1", amount = 1},
-        {type = "item", name = "food-1", amount = 1}
+        {type = "item", name = "usedlabor-1", amount = 1}
     },
     results = {
         {type = "item", name = "labor-1", amount = 1}

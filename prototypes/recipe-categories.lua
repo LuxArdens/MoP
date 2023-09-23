@@ -19,4 +19,12 @@ data:extend {
         type = "recipe-category",
         name = "laborproduction"
     },
+    {
+        type = "recipe-category",
+        name = "mining-mop"
+    },
+    {
+        type = "recipe-category",
+        name = "pop-ore"
+    },
 }

@@ -17,7 +17,7 @@ ITEM {
     name = "mop-beacon",
     icon = "__MoP__/graphics/icons/beacony.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    --flags = {"goes-to-quickbar"},
     subgroup = "mop-items",
     order = "f",
     place_result = "mop-beacon",

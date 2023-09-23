@@ -9,12 +9,23 @@ require("prototypes/recipe-categories")
 require("prototypes/fuel-category")
 
 
-	--ENTITIES
+	--ENTITIES/BUILDINGS
+require("prototypes/buildings/manufactory-1")
 require("prototypes/buildings/farm-1")
 require("prototypes/buildings/housing-1")
+require("prototypes/buildings/coal-mining-1")
+require("prototypes/buildings/road-1")
+require("prototypes/buildings/road-2")
+require("prototypes/buildings/road-3")
+require("prototypes/buildings/road-4")
+require("prototypes/buildings/road-5")
 
 	--ITEMS
+require("prototypes/item/food")
 require("prototypes/item/labor")
+
+	--ORES
+require("prototypes/ores/pop")
 
 
 	--RECIPES
