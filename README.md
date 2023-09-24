@@ -13,7 +13,7 @@ MoP is meant for EXPERIENCED players who are looking for a new challenge that go
 
 # (NOT) Recommended mods
 YES
-+ Basic QoL mods, Long Reach, squeak through, Picker, mods to run faster, etc
++ Basic QoL mods, Long Reach, squeak through, EvenDistribution, Picker, mods to run faster, voidchest, etc
 + LTN
 + bobs adjustable inserters
 + Timetools, in case the early game takes too long for you, though it may trivialize things if you warp through everything at 64x speed so use with caution.
@@ -21,20 +21,18 @@ YES
 NO
 - early bots (not needed)
 - stack size increasers, unless it's patched properly (stack sizes are overhauled)
-- belt mods, bot mods, train mods except for LTN
+- mods that adjust bots, belts, inserter or trains, or the recipes of these items. Things like LTN are fine.
 - Anything that lets you copy/clone/increase total pop count. Pops are fundamentally meant to be very restricted, anything that violates that will completely unhinge this mod.
 - other overhaul mods
 
-#Tips
-- Don't enable biters unless you are very sure of what you are doing
-- Start Population determines game difficulty to a very large extent. Setting it higher than recommended may eliminate the real challenge. Setting it lower may be outright tedious.
-- Handcrafting recipes are available for labor and food and such. Best not to rely on them since it is very tedious, but it may help in an emergency.
-- The various types of housing represent your actual living population and thus need to be maintained constantly. It is extremely inefficient to have more villages/appartments than you actually need.
-- 
-
-
-
-
+#General tips for MoP
+- Don't enable biters unless you know what you're doing. Pollution has not been balanced and may never be balanced.
+- Starting Population determines game difficulty to a very large extent. Setting it higher than the recommended value may eliminate the real challenge. Setting it lower may result in an experience similar to Seablock.
+- The various types of housing represent your actual living population; they need to be maintained with the required food/supplies CONSTANTLY regardless of whether you use them. It is therefor extremely inefficient to have more villages/appartments than you actually need.
+- Housing will not start working instantly the moment you build it. The population living there needs to be fed and given what they demand for some time before they actually start providing labor. Keep it fed and it will come online eventually. 
+- If you neglect maintenance for your housing or supply it too poorly, the population decends into anarchy and will cease providing labor for you. You will need to provide it with a steady supply of food/commodities for a while again before it comes back online. The time it takes for it to come back online is related to how long you neglected it.
+- Handcrafting recipes are available for basic food and labor and such for emergencies.
+- Some infrastructure and buildings in MoP are handled by your population and thus cost no resource, but may consume labor in their recipe instead. This represents labor locked into tasks such as: hauling items, inserting items, driving trains, etc. They are never permanently lost, you can get a refund on the labor if you no longer need the relevant items.
 
 
 

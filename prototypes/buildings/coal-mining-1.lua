@@ -26,7 +26,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "coal-mining-1",
-    icon = "__base__/graphics/icons/assembling-machine-1.png",
+    icon = "__MoP__/graphics/icons/coal-mining-1.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "mop-items",
     order = "f",
@@ -37,16 +37,16 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "coal-mining-1",
-    icon = "__base__/graphics/icons/assembling-machine-1.png",
+    icon = "__MoP__/graphics/icons/coal-mining-1.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 0.1, result = "coal-mining-1"},
     fast_replaceable_group = "coal-mining",
     max_health = 1200,
-    corpse = "assembling-machine-1-remnants",
-    dying_explosion = "assembling-machine-1-explosion",
-    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    corpse = "stone-furnace-remnants",
+    dying_explosion = "stone-furnace-explosion",
+    collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
+    selection_box = {{-0.8, -1}, {0.8, 1}},
     --fast_replaceable_group = "coal-mining",
     --next_upgrade = "coal-mining-2",
     module_specification = {
@@ -70,46 +70,41 @@ ENTITY {
       layers =
       {
         {
-          filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
-          priority="high",
-          width = 108,
-          height = 114,
-          frame_count = 32,
-          line_length = 8,
-          shift = util.by_pixel(0, 2),
+          filename = "__MoP__/graphics/entity/coal-mining-1/coal-mining-1.png",
+          priority = "extra-high",
+          width = 81,
+          height = 64,
+          frame_count = 1,
+          shift = util.by_pixel(14.5, 2),
           hr_version =
           {
-            filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1.png",
-            priority="high",
-            width = 214,
-            height = 226,
-            frame_count = 32,
-            line_length = 8,
-            shift = util.by_pixel(0, 2),
+            filename = "__MoP__/graphics/entity/coal-mining-1/hr-coal-mining-1.png",
+            priority = "extra-high",
+            width = 151,
+            height = 146,
+            frame_count = 1,
+            shift = util.by_pixel(-0.25, 6),
             scale = 0.5
           }
         },
         {
-          filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
-          priority="high",
-          width = 95,
-          height = 83,
+          filename = "__MoP__/graphics/entity/coal-mining-1/coal-mining-1-shadow.png",
+          priority = "extra-high",
+          width = 81,
+          height = 64,
           frame_count = 1,
-          line_length = 1,
-          repeat_count = 32,
           draw_as_shadow = true,
-          shift = util.by_pixel(8.5, 5.5),
+          shift = util.by_pixel(14.5, 2),
           hr_version =
           {
-            filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
-            priority="high",
-            width = 190,
-            height = 165,
+            filename = "__MoP__/graphics/entity/coal-mining-1/hr-coal-mining-1-shadow.png",
+            priority = "extra-high",
+            width = 164,
+            height = 74,
             frame_count = 1,
-            line_length = 1,
-            repeat_count = 32,
             draw_as_shadow = true,
-            shift = util.by_pixel(8.5, 5),
+            force_hr_shadow = true,
+            shift = util.by_pixel(14.5, 13),
             scale = 0.5
           }
         }
@@ -120,12 +115,12 @@ ENTITY {
       sound =
       {
         {
-          filename = "__base__/sound/assembling-machine-t1-1.ogg",
-          volume = 0.5
+          filename = "__base__/sound/furnace.ogg",
+          volume = 0.6
         }
       },
-      audible_distance_modifier = 0.5,
       fade_in_ticks = 4,
-      fade_out_ticks = 20
-    }
+      fade_out_ticks = 20,
+      audible_distance_modifier = 0.4
+    },
 }

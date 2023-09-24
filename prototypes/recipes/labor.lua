@@ -5,9 +5,9 @@ data:extend(
 RECIPE {
     type = "recipe",
     name = "labor-1-initial",
-    category = "housing",
+    --category = "housing",
     enabled = true,
-    energy_required = 0.1,
+    energy_required = 0.01,
     ingredients = {
         {type = "item", name = "human-1", amount = 1}
     },

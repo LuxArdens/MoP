@@ -24,7 +24,7 @@ ENTITY {
     map_color = {r = 0.0, g = 0.95, b = 0.7},
     highlight = true,
     minable = {
-        mining_time = 1,
+        mining_time = 0.001,
         results = {
             {type = "item", name = "human", amount = 1, probability = 0.1}
         },
