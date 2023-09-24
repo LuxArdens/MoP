@@ -19,8 +19,8 @@ YES
 + Timetools, in case the early game takes too long for you, though it may trivialize things if you warp through everything at 64x speed so use with caution.
 
 NO
-- early bots
-- stack size increasers, unless it's patched properly (stack sizes will be overhauled)
+- early bots (not needed)
+- stack size increasers, unless it's patched properly (stack sizes are overhauled)
 - belt mods, bot mods, train mods except for LTN
 - Anything that lets you copy/clone/increase total pop count. Pops are fundamentally meant to be very restricted, anything that violates that will completely unhinge this mod.
 - other overhaul mods

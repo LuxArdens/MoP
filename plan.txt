@@ -40,7 +40,12 @@ X	3. stasis pods ore maken om pops te verkrijgen
 7. 
 
 
-
+Ruwweg wat de bevolkingsfracties moeten zijn:
+Tier 1: 0	0	0	0	100		- letterlijk alleen maar boeren en ambachtelijke zooi
+Tier 2: 0	0	0	10	90		- een kleine stedelijke minderheid die specialistische dingen doet
+Tier 3: 0	0	10	20	70		- een aanzienlijke stedelijke minderheid die steeds uitgebreidere industrie bedrijft
+Tier 4: 0	20	30	50	0		- mechanisatie van boerderijen en mijnen elimineert de laagste laag en die werken nu in fabrieken. De gegoede burgerij is ook flink aanwezig. Bovenaan staan hoge pieten en allerlei wetenschappers.
+Tier 5: 50	50	0	0	0		- futuristische automatisatie heeft al het hersenloze werk geëlimineerd, maar 50% van de bevolking is alleen maar bezig met allerlei luxe onzingoederen te produceren voor iedereen.
 
 
 
@@ -159,7 +164,8 @@ Kleding
 
 EXTERN VERMAAK
 Sociale gelegenheden
-	
+Religieuze gebouwen
+Winkels
 Diverse vermaak
 	Theater
 	Dierengevechten
