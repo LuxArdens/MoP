@@ -42,15 +42,8 @@ ENTITY {
     allowed_effects = {"speed", "productivity"},
     crafting_categories = {"housing"},
     crafting_speed = 1,
-    energy_source = {
-      type = "burner",
-      effectivity = 1,
-	  fuel_category = "food",
-      fuel_inventory_size = 1,
-      emissions = 0.00,
-	  scale_energy_usage = false,
-    },
-    energy_usage = "694.44kW",
+    energy_source = { type = "void", },
+    energy_usage = "1kW",
     ingredient_count = 1,
     animation = {
         filename = "__MoP__/graphics/entity/housing-1/housing-1.png",

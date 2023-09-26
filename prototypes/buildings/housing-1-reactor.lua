@@ -33,8 +33,8 @@ ENTITY {
     max_health = 1000,
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
-    collision_box = {{-3.3, -3.3}, {3.3, 3.3}},
-    selection_box = {{-1.5, -1.5}, {4.5, 4.5}},
+    collision_box = {{-3.0, -3.0}, {3.0, 3.0}},
+    selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
     module_specification = {
         module_slots = 0
     },

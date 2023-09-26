@@ -42,9 +42,27 @@ script.on_event(defines.events.on_player_created, InsertIntoInventory)
 script.on_event(defines.events.on_built_entity, function(event)
   if event.created_entity.name == "housing-1" then -- if the entity that the player built was a house
     -- insert into the global.housing1 table an entry with a 'key' of housing that is the housing-1 entity, and a key of housing-reactor that is a new housing-1-reactor entity at the same position
+	script.register_on_entity_destroyed(event.created_entity)
     table.insert( global.housing1, { housing1=event.created_entity, housing1reactor=game.surfaces[1].create_entity{ name="housing-1-reactor", position=event.created_entity.position, force = game.forces.player}})
+	--script.register_on_entity_destroyed(event.created_entity)
+	  game.print("I BUILT A NUCLEAR REACTOR UNDERNEATH YOUR BEDROOM")
   end
 end)
+
+-- same for bot built things
+script.on_event(defines.events.on_robot_built_entity, function(event)
+  if event.created_entity.name == "housing-1" then -- if the entity that the player built was a house
+    -- insert into the global.housing1 table an entry with a 'key' of housing that is the housing-1 entity, and a key of housing-reactor that is a new housing-1-reactor entity at the same position
+    table.insert( global.housing1, { housing1=event.created_entity, housing1reactor=game.surfaces[1].create_entity{ name="housing-1-reactor", position=event.created_entity.position, force = game.forces.player}})
+	  game.print("I BUILT A NUCLEAR REACTOR UNDERNEATH THE KITCHEN")
+  end
+end)
+
+
+
+-- loop through housing table, do cleanup and adjust heat
+
+
 script.on_event(defines.events.on_tick, function(event) -- will change it to check way less than once per second later on
   if event.tick % 60 == 0 then
     for index, thetable in ipairs(global.housing1) do -- loop through the housing1 table
@@ -52,22 +70,26 @@ script.on_event(defines.events.on_tick, function(event) -- will change it to che
       if not thetable.housing1.valid then
         if thetable.housing1reactor.valid then
           thetable.housing1reactor.destroy() -- destroy reactor
+			game.print("DESTROYED A REACTOR")
           table.remove(global.housing1, index) -- remove the current table (housing and reactor) from the glob.housing table.
         end
 		-- elseif reactor underneath house no longer exists, destroy the house above it
       elseif not thetable.housing1reactor.valid then
         if thetable.housing1.valid then
-          thetable.housing1.destroy() -- destroy reactor
+          thetable.housing1.destroy() -- destroy house
+			game.print("DESTROYED A HOUSE")
           table.remove(global.housing1, index) -- remove the current table (housing and reactor) from the glob.housing table.
         end
 	  -- now since both still exist, add elseif statement checking temperature is above 60%
 	  elseif thetable.housing1reactor.temperature < 600 then
-		thetable.housing1reactor.damage(1, game.forces.enemy, "impact") -- I probably won't be keeping this in, but it's useful for visually tracking things
+		--thetable.housing1reactor.damage(1, game.forces.enemy, "impact") -- I probably won't be keeping this in, but it's useful for visually tracking things
 		-- now reduce the heat in each reactor since there is no actual heat loss mechanic
 		thetable.housing1reactor.temperature = thetable.housing1reactor.temperature - 6 -- pay a little less when the housing is not operational, allowing an increase in temperature
 		thetable.housing1.crafting_progress = 0 -- you lose all crafting process
+			game.print("HOUSE NOT FUNCTIONAL")
 	  elseif thetable.housing1reactor.temperature > 600 then
 		thetable.housing1reactor.temperature = thetable.housing1reactor.temperature - 7 -- pay full maintenance when the housing is operational; it will still slowly increase
+			game.print("HOUSE OPERATIONAL")
       end
     end
   end

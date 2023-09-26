@@ -24,16 +24,23 @@ NO
 - mods that adjust bots, belts, inserter or trains, or the recipes of these items. Things like LTN are fine.
 - Anything that lets you copy/clone/increase total pop count. Pops are fundamentally meant to be very restricted, anything that violates that will completely unhinge this mod.
 - other overhaul mods
+- Factorissimo, or other mods which add game surfaces outside of Nauvis. These will break the scripts.
 
-#General tips for MoP
+#General tips on MoP and its mechanics
+Settings and general tips:
 - Don't enable biters unless you know what you're doing. Pollution has not been balanced and may never be balanced.
 - Starting Population determines game difficulty to a very large extent. Setting it higher than the recommended value may eliminate the real challenge. Setting it lower may result in an experience similar to Seablock.
-- The various types of housing represent your actual living population; they need to be maintained with the required food/supplies CONSTANTLY regardless of whether you use them. It is therefor extremely inefficient to have more villages/appartments than you actually need.
-- Housing will not start working instantly the moment you build it. The population living there needs to be fed and given what they demand for some time before they actually start providing labor. Keep it fed and it will come online eventually. 
-- If you neglect maintenance for your housing or supply it too poorly, the population decends into anarchy and will cease providing labor for you. You will need to provide it with a steady supply of food/commodities for a while again before it comes back online. The time it takes for it to come back online is related to how long you neglected it.
 - Handcrafting recipes are available for basic food and labor and such for emergencies.
-- Some infrastructure and buildings in MoP are handled by your population and thus cost no resource, but may consume labor in their recipe instead. This represents labor locked into tasks such as: hauling items, inserting items, driving trains, etc. They are never permanently lost, you can get a refund on the labor if you no longer need the relevant items.
+- Combinators, splitters and and circuit wires are available from the game start, for free, because your pawns can perform such basic operations. Put this to good use.
 
+Houses:
+- Each type of housing has two sides for input of food or other goods, and 2 sides for input of spent labor and output of fresh labor.
+- The various types of houses represent your actual living population; they need to be maintained with the required food/supplies CONSTANTLY regardless of whether you use them. It is therefor extremely inefficient to have more villages/appartments than you actually need.
+- Housing will not start working instantly the moment you build it. The population living there needs to be fed and given what they demand for some time before they actually start providing labor. Keep it fed and it will come online eventually.
+- If you neglect maintenance for your housing or supply it too poorly, the population decends into anarchy and will cease providing labor for you. You will need to provide it with a steady supply of food/commodities for a while again before it comes back online. The time it takes for it to come back online is related to how long you neglected it.
+- Some infrastructure and buildings in MoP are handled by your population and thus cost no resource, but may consume labor in their recipe instead. This represents labor locked into tasks such as: hauling items, inserting items, driving trains, etc. They are never permanently lost, as you can get a 100% refund on the labor if you no longer need the relevant items.
 
+Mining:
+- Copper is available in its metallic form without smelting. That doesn't make scrounging for it the best choice.
 
 

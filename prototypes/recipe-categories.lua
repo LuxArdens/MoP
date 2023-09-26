@@ -25,6 +25,14 @@ data:extend {
     },
     {
         type = "recipe-category",
+        name = "smelting-mop"
+    },
+    {
+        type = "recipe-category",
         name = "pop-ore"
+    },
+    {
+        type = "resource-category",
+        name = "mop-coal"
     },
 }

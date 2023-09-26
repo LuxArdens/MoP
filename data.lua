@@ -15,6 +15,10 @@ require("prototypes/buildings/farm-1")
 require("prototypes/buildings/housing-1")
 require("prototypes/buildings/housing-1-reactor")
 require("prototypes/buildings/coal-mining-1")
+require("prototypes/buildings/copper-mining-1")
+require("prototypes/buildings/iron-mining-1")
+require("prototypes/buildings/stone-mining-1")
+require("prototypes/buildings/smelter-1")
 require("prototypes/buildings/road-1")
 require("prototypes/buildings/road-2")
 require("prototypes/buildings/road-3")
@@ -27,7 +31,7 @@ require("prototypes/item/food")
 require("prototypes/item/labor")
 
 	--ORES
-require("prototypes/ores/pop")
+--require("prototypes/ores/pop")
 
 
 	--RECIPES
